@@ -18,6 +18,6 @@ public class ZhenHunters {
         // TODO code application logic here
         GameGrid game = new GameGrid();
         game.displayGrid();
-    }
+    }//main
     
-}
+}//ZhenHunters

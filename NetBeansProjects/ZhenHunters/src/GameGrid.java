@@ -119,7 +119,8 @@ public class GameGrid {
                   }
                   else 
                   {
-                      return;
+                      printPiece("A Piece is already at this location.");
+                      System.exit(99);
                   }
                 
                   
@@ -138,23 +139,25 @@ public class GameGrid {
                   }
                       else 
                       {
+                      printPiece("A Piece is already at this location.");
                       System.exit(99);
                   }
                   }
               }
               if (row == 2 && column > 0 || row == 2 && column <= 8) 
               {
-                  Zhen theZhen = new Zhen();
-                  if (addGamePiece(theZhen, row, column)) 
+                  Zhen theZhen1 = new Zhen();
+                  if (addGamePiece(theZhen1, row, column)) 
                   {
                       
-                  theZhen.setType("Zhen");
-                  theZhen.setSymbol('Z');
-                  theZhen.setRowPos(row);
-                  theZhen.setColPos(column);  
+                  theZhen1.setType("Zhen");
+                  theZhen1.setSymbol('Z');
+                  theZhen1.setRowPos(row);
+                  theZhen1.setColPos(column);  
                   }
                   else 
                   {
+                      printPiece("A Piece is already at this location.");
                       System.exit(99);
                   }
                 }
@@ -163,29 +166,39 @@ public class GameGrid {
                     {
                         if (numZhens == 18 || numZhens == 20) 
                         {
-                            Zhen theZhen = new Zhen();
-                        if (addGamePiece(theZhen, row, column)) {
-                        theZhen.setType("Zhen");
-                        theZhen.setSymbol('Z');
-                        theZhen.setRowPos(row);
-                        theZhen.setColPos(column);
+                            Zhen theZhen2 = new Zhen();
+                        if (addGamePiece(theZhen2, row, column)) {
+                        theZhen2.setType("Zhen");
+                        theZhen2.setSymbol('Z');
+                        theZhen2.setRowPos(row);
+                        theZhen2.setColPos(column);
                         }
+                        else 
+                  {
+                      printPiece("A Piece is already at this location.");
+                      System.exit(99);
+                  }
                     }
                 }
                 
                     if (row == 4 && column == 0 || row == 4 && column == 7) 
                     {
-                        Zhen theZhen = new Zhen();
-                        if (addGamePiece(theZhen, row, column)) 
+                        Zhen theZhen3 = new Zhen();
+                        if (addGamePiece(theZhen3, row, column)) 
                         {
                             if (numZhens == 20) 
                             {
-                            theZhen.setType("Zhen");
-                            theZhen.setSymbol('Z');
-                            theZhen.setRowPos(row);
-                            theZhen.setColPos(column);
+                            theZhen3.setType("Zhen");
+                            theZhen3.setSymbol('Z');
+                            theZhen3.setRowPos(row);
+                            theZhen3.setColPos(column);
                         }
                     }
+                        else 
+                  {
+                      printPiece("A Piece is already at this location.");
+                      System.exit(99);
+                  }
                 }
                     if (row == 4 && column == 3 || row == 4 && column == 4) 
                     {
@@ -201,7 +214,12 @@ public class GameGrid {
                             hunterCoord[0] = row;
                             hunterCoord[1] = column;
                             
-                        }  
+                        }
+                          else 
+                  {
+                      printPiece("A Piece is already at this location.");
+                      System.exit(99);
+                  }
                         }
                         if (column == 4) 
                         {
@@ -216,20 +234,30 @@ public class GameGrid {
                             hunter2Coord[1] = column;
                             
                         }
+                            else 
+                  {
+                      printPiece("A Piece is already at this location.");
+                      System.exit(99);
+                  }
                         }
                         
                 }
                 
                 if (row == 6 && column == 0 || row == 6 && column == 1 || row == 7 && column == 0 || row == 7 && column == 1 || row == 6 && column == 6 || row == 6 && column == 7 || row == 7 && column == 6 || row == 7 && column == 7) 
                 {
-                    Bramble theBramble = new Bramble();
-                if (addGamePiece(theBramble, row, column)) 
+                    Bramble theBramble1 = new Bramble();
+                if (addGamePiece(theBramble1, row, column)) 
                 {
-                  theBramble.setType("Bramble");
-                  theBramble.setSymbol('*');
-                  theBramble.setColPos(column);
-                  theBramble.setRowPos(row);
+                  theBramble1.setType("Bramble");
+                  theBramble1.setSymbol('*');
+                  theBramble1.setColPos(column);
+                  theBramble1.setRowPos(row);
                 }
+                else 
+                  {
+                      printPiece("A Piece is already at this location.");
+                      System.exit(99);
+                  }
             }
                 
                 

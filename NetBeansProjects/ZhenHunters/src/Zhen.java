@@ -10,9 +10,13 @@
  */
 public class Zhen extends GamePiece {
     
-    public Zhen(){
+    /**
+     * Constructor for the Zhen piece.
+     */
+    public Zhen()
+    {
         GamePiece theZhen = new GamePiece();
         theZhen.setSymbol('Z');
         theZhen.setType("zhen");
-    }
-}
+    }//Zhen
+}//Zhen

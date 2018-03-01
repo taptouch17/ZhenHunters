@@ -9,37 +9,64 @@
  * @author jelani
  */
 public class Hunter extends GamePiece {
-    private int energyLevel;
-    final private int MAXENERGY;
-    private char hName;
+    private int energyLevel; //Stores Hunter's energy level.
+    final private int MAXENERGY = 6; //Max energy of hunter
+    private char hName; // First char of Hunter's name
     
-    public Hunter() {
+    /**
+     * Constructor to initialise the variables.
+     */
+    public Hunter() 
+    {
         GamePiece theHunter = new GamePiece();
         theHunter.setType("hunter");
         theHunter.setSymbol('H');
-        MAXENERGY = 6;
         energyLevel = 0;
-    }
+        hName = ' ';
+    }//Hunter
     
-    public int getEnergyLevel() {
+    /**
+     * Accessor of the energy level.
+     * @return EnergyLevel
+     */
+    public int getEnergyLevel() 
+    {
         return energyLevel;
-    }
+    }//getEnergyLevel
     
-    public void setEnergyLevel(int energy) {
+    /**
+     * Mutator to set the energy level.
+     * @param energy the energy of the hunter.
+     */
+    public void setEnergyLevel(int energy) 
+    {
         energyLevel = energy;
-    }
+    }//setEnergyLevel
     
-    public int getMaxEnergy() {
+    /**
+     * Accessor to get the maximum energy of the hunter.
+     * @return MAXENERGY
+     */
+    public int getMaxEnergy() 
+    {
         return MAXENERGY;
-    }
+    }//getMaxEnergy
     
-    
-    
-    public char getHunterName() {
+    /**
+     * Accessor to get the Hunter's name.
+     * @return hName
+     */
+    public char getHunterName() 
+    {
         return hName;
-    }
+    }//getHunterName
     
-    public void setHunterName(char name) {
+    /**
+     * Mutator to set the name of the hunter.
+     * @param name: The name the user would like to use.
+     */
+    public void setHunterName(char name) 
+    {
         hName = name;
-    }
-}
+    }//setHunterName
+}//Hunter

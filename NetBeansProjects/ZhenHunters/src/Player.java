@@ -11,16 +11,31 @@
 public class Player {
     private String name;
     
-    public Player(String theName) {
+    /**
+     * Constructor to initialise the variable(s).
+     * @param theName - The name the player sets.
+     */
+    public Player(String theName) 
+    {
         name = theName;
-    }
+    } //Player
     
-    public String getName() {
+    /**
+     * This method is the accessor for the Name.
+     * @return name
+     */
+    public String getName() 
+    {
         return name;
-    }
+    } //getName
     
-    public void setName(String theName) {
+    /**
+     * Mutator to set the private variable of name.
+     * @param theName: Name of the player wants to use.
+     */
+    public void setName(String theName) 
+    {
         name = theName;
-    }
+    } //setName
     
-}
+}//Player

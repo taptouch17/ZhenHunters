@@ -11,13 +11,16 @@
 
 public class Bramble extends GamePiece {
     
-    
-    public Bramble() {
+    /**
+     * Constructor for Bramble.
+     */
+    public Bramble() 
+    {
       GamePiece theBramble = new GamePiece();
       theBramble.setType("Bramble");
       theBramble.setSymbol('*');
       
         
-    }
+    }//Bramble
     
-}
+}//Bramble
